@@ -1,0 +1,7 @@
+import numpy as np
+
+marks = np.array([78, 65, 92, 55, 84])
+
+print("Average:", np.mean(marks))
+print("Highest:", np.max(marks))
+print("Lowest:", np.min(marks))
