@@ -1,0 +1,17 @@
+import numpy as np
+
+# Read 3 x 3 matrix from user
+matrix = []
+
+for i in range(3):
+    row = list(map(int, input(f"Enter row {i+1}: ").split()))
+    matrix.append(row)
+
+matrix = np.array(matrix)
+
+# Calculate sums
+row_sums = np.sum(matrix, axis=1)
+column_sums = np.sum(matrix, axis=0)
+
+print("Row sums:", row_sums)
+print("Column sums:", column_sums)
