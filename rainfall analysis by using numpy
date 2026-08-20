@@ -1,0 +1,18 @@
+import numpy as np
+
+
+rainfall = np.array(
+    list(map(float, input("Enter rainfall for 12 months: ").split()))
+)
+
+
+total = np.sum(rainfall)
+average = np.mean(rainfall)
+
+
+months = np.where(rainfall > average)[0] + 1
+
+print("Total Rainfall:", total)
+print("Average Rainfall:", round(average, 2))
+print("Months having rainfall above average:")
+print(months)
