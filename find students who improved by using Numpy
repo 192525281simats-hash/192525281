@@ -1,0 +1,8 @@
+import numpy as np
+
+test1 = np.array([65, 80, 72, 90, 55])
+test2 = np.array([70, 75, 78, 85, 60])
+
+students = np.where(test2 > test1)[0] + 1
+
+print("Students improved:", students)
